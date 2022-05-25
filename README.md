@@ -8,5 +8,5 @@
 - [싱글톤패턴](https://github.com/myungsworld/designPattern/tree/main/singleton)
 ### 구조 패턴
 - [어뎁터](https://github.com/myungsworld/designPattern/tree/main/adapter)
-
+- [브릿지](https://github.com/myungsworld/designPattern/tree/main/bridge)
 ### 행위 패턴
