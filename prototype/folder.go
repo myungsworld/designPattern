@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type folder struct {
-	children []inode
 	name     string
+	children []inode
 }
 
 func (f *folder) print(indentation string) {
@@ -15,12 +15,12 @@ func (f *folder) print(indentation string) {
 }
 
 func (f *folder) clone() inode {
-	cloneFolder := &folder{name: f.name + "_clone"}
+	clonedFolder := &folder{name: f.name + "_clone"}
 	var tempChildren []inode
 	for _, i := range f.children {
 		copy := i.clone()
 		tempChildren = append(tempChildren, copy)
 	}
-	cloneFolder.children = tempChildren
-	return cloneFolder
+	clonedFolder.children = tempChildren
+	return clonedFolder
 }

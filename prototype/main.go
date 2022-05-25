@@ -1,26 +1,17 @@
 package main
 
 func main() {
-	file1 := &file{name: "File1"}
-	file2 := &file{name: "File2"}
-	file3 := &file{name: "File3"}
+	file1 := &file{name: "file1"}
+	file2 := &file{name: "file2"}
+	file3 := &file{name: "file3"}
 
-	folder1 := &folder{
-		name:     "Folder1",
-		children: []inode{file1},
-	}
+	folder1 := &folder{name: "folder1", children: []inode{
+		file1, file2,
+	}}
+	folder2 := &folder{name: "folder2", children: []inode{
+		folder1, file3,
+	}}
 
-	folder2 := &folder{
-		name:     "Folder2",
-		children: []inode{folder1, file1, file2, file3},
-	}
-
+	//folder1.print()
 	folder2.print(" ")
-
-	clone := folder2.clone()
-	clone.print(" ")
-
-	clone2 := clone.clone()
-	clone2.print(" ")
-
 }
