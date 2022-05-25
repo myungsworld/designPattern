@@ -4,6 +4,7 @@
 - [추상팩토리](https://github.com/myungsworld/designPattern/tree/main/abstractFacotry)
 - [팩토리](https://github.com/myungsworld/designPattern/tree/main/factoryMethod)
 - [빌더](https://github.com/myungsworld/designPattern/tree/main/builder)
+- [프로토타입](https://github.com/myungsworld/designPattern/tree/main/prototype)
 ### 구조 패턴
 - [어뎁터](https://github.com/myungsworld/designPattern/tree/main/adapter)
 
